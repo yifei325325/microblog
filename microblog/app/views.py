@@ -8,6 +8,8 @@ Created on 2016年11月9日
 from app import app
 from flask.templating import render_template
 @app.route('/')
+def index1():
+    return "<h1>Hello Kenny</h1>"
 @app.route('/index')
 def index():
     user = {'nickname':'Miguel'}
